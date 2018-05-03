@@ -34,7 +34,8 @@ def intro():
     a = int(input("Enter Your Choise here : >>> "))
     if a == 0 :
         cmd1 = os.system("wget -q -O - https://www.kali.org/archive-key.asc | gpg --import && dpkg --add-architecture i386")
-        cmd = os.system("echo '\ndeb http://http.kali.org/kali kali-rolling main contrib non-free' >> /etc/apt/sources.list && apt-get update && apt-get upgrade")
+        cmd  = os.system("echo '\ndeb http://http.kali.org/kali kali-rolling main contrib non-free' >> /etc/apt/sources.list && apt-get update && apt-get upgrade")
+        cmd2 = os.system("gpg -a --export ED444FF07D8D0BF6 | sudo apt-key add -")
         intro()
     if a == 1 :
         cmd = os.system("clear")
