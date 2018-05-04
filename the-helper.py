@@ -11,13 +11,13 @@ def intro():
    ██║   ██╔══██║██╔══╝╚════╝██╔══██║██╔══╝  ██║     ██╔═══╝ ██╔══╝  ██╔══██╗
    ██║   ██║  ██║███████╗    ██║  ██║███████╗███████╗██║     ███████╗██║  ██║
    ╚═╝   ╚═╝  ╚═╝╚══════╝    ╚═╝  ╚═╝╚══════╝╚══════╝╚═╝     ╚══════╝╚═╝  ╚═╝
-                                                                             """)
+                                                         Coded By Hacker-EG    """)
     print("""
 --------------------------------------------------------------------|
 |Note : these Tools and Environments for Debian and Ubuntu  only    |
 |Some Tools will be Downloaded in the file of script                |
---------#the list comes from Kali Linux Officale Website#-----------|
--------#the Script was Coded By Hacker-EG (one of the goods)#-------|
+|the list comes from Kali Linux Officale Website                    |
+|-------------------------------------------------------------------|
 
 (0)Add kali linux repositories && update            (10)Programming
 (1)Information Gathering                            (11)Sniffing & Spoofing
