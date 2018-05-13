@@ -796,7 +796,7 @@ def intro():
       def program():
         cmd = os.system("clear")
         print("""
-1)idle
+1)idle3 (Based on Python3)
 2)Sublime
 3)Atom
 4)Brackets
@@ -811,7 +811,7 @@ def intro():
 """)
         zx = int(input("Enter the number of the tool : >>> "))
         if zx == 1 :
-            cmd = os.system("apt-get update && apt-get install idle")
+            cmd = os.system("apt-get update && apt-get install idle3")
         elif zx == 2 :
             cmd = os.system("wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add - && sudo apt-get install apt-transport-https && echo 'deb https://download.sublimetext.com/ apt/stable/' | sudo tee /etc/apt/sources.list.d/sublime-text.list && apt-get update && apt-get install sublime-text")
         elif zx == 3 :
