@@ -14,24 +14,24 @@ def intro():
                                                          Coded By Hacker-EG    """)
     print("""
 --------------------------------------------------------------------|
-|Note : these Tools and Environments for Debian and Ubuntu  only    |
-|Some Tools will be Downloaded in the file of script                |
-|the list comes from Kali Linux Officale Website                    |
+|Note : These tools and environments are for Debian and Ubuntu      |
+|       only. Some tools will be downloaded in the file of script   |
+|       the list comes from Kali Linux offical website              |
 |-------------------------------------------------------------------|
 
-(0)Add kali linux repositories && update            (10)Programming
-(1)Information Gathering                            (11)Sniffing & Spoofing
-(2)Vulnerability Analysis                           (12)Password Attacks
-(3)Wireless Attacks                                 (13)Maintaining Access
-(4)Web Applications                                 (14)Reverse Engineering
-(5)Exploitation Tools                               (15)Hardware Hacking
-(6)Stress Testing                                   (16)Avoid Av
-(7)Forensics Tools                                  (17)Hacking Android
-(8)Browsers                                         (18)Desktop Enviroments
-(9)Media Players                                    (19)Post Exploitation                    
-(21)About me                                        (20)Exit Script
+(0) Add Kali Linux repositories && update            (10) Programming
+(1) Information Gathering                            (11) Sniffing & Spoofing
+(2) Vulnerability Analysis                           (12) Password Attacks
+(3) Wireless Attacks                                 (13) Maintaining Access
+(4) Web Applications                                 (14) Reverse Engineering
+(5) Exploitation Tools                               (15) Hardware Hacking
+(6) Stress Testing                                   (16) Avoid Av
+(7) Forensics Tools                                  (17) Hacking Android
+(8) Browsers                                         (18) Desktop Enviroments
+(9) Media Players                                    (19) Post Exploitation                    
+(21) About me                                        (20) Exit Script
 """)
-    a = int(input("Enter Your Choise here : >>> "))
+    a = int(input("Enter your choice here : >>> "))
     if a == 0 :
         cmd1 = os.system("wget -q -O - https://www.kali.org/archive-key.asc | gpg --import && dpkg --add-architecture i386")
         cmd  = os.system("echo '\ndeb http://http.kali.org/kali kali-rolling main contrib non-free' >> /etc/apt/sources.list && apt-get update && apt-get upgrade")
@@ -70,7 +70,7 @@ def intro():
 28) GoLismero                         57) hping3
 29) goofile                           58) Back to main menu
 
-0)install all information gathering tools
+0) install all information gathering tools
 """)
         def informa():
          infor = int(input("Enter the number of the tool : >>> "))
@@ -216,7 +216,7 @@ def intro():
 15) Inguma                              32) THC-IPV6
 16) jSQL                                33) tnscmd10g
 17) Lynis                               34) unix-privesc-check
-                                        35)back to main menu
+                                        35) back to main menu
 0) Install all Vulnerability tools 
 """)
         def vull():
@@ -319,7 +319,7 @@ def intro():
 16) Wifite                              32) Back to main menu
 90) airgeddon
 91) wifite v2
-0)install all wireless tools
+0) install all wireless tools
 """)
             w = int(input("Enter The number of the tool : >>> "))
             if w == 1 :
@@ -599,7 +599,7 @@ def intro():
 12) Termineter
 13) THC-IPV6
 14) THC-SSL-DOS
-15)Back to main menu
+15) Back to main menu
 
 0) Install all Stress Testing tools
 """)
@@ -719,11 +719,11 @@ def intro():
       def browsers():
         cmd = os.system("clear")
         print("""
-1)Firefox
-2)google chrome
-3)Tor Browser
-4)chromium
-5)Iceweasel
+1) Firefox
+2) Google Chrome
+3) Tor Browser
+4) Chromium
+5) Iceweasel
 
 6)Back to main menu
 """)
@@ -732,8 +732,8 @@ def intro():
             cmd = os.system("apt-get update && apt-get install firefox-esr")
         elif y == 2 :
             print("""
-1)X64 --->> amd64
-2)x32 --->> i386
+1) x64 --->> amd64
+2) x32 --->> i386
 """)
             google = int(input("Whick System you use? : >>> "))
             if google == 1 :
@@ -745,8 +745,8 @@ def intro():
             browsers()
         elif y == 3 :
             print("""
-1)X64 --->> amd64
-2)x32 --->> i386
+1) x64 --->> amd64
+2) x32 --->> i386
 """)
             tor = int(input("Which system you use ? >>> "))
             if tor == 1 :
@@ -769,12 +769,12 @@ def intro():
       def media():
         cmd = os.system("clear")
         print("""
-1)VLC
-2)MPV
-3)banshee
-4)kodi
+1) VLC
+2) MPV
+3) banshee
+4) kodi
 
-5)Back to main menu
+5) Back to main menu
 """)
         er = int(input("Enter the number of the player : >>> "))
         if er == 1 :
@@ -796,17 +796,17 @@ def intro():
       def program():
         cmd = os.system("clear")
         print("""
-1)idle3 (Based on Python3)
-2)Sublime
-3)Atom
-4)Brackets
-5)Eclipse
-6)KATE
-7)Gedit
-8)Geany
-9)Bluefish Editor
+1) idle3 (Based on Python3)
+2) Sublime
+3) Atom
+4) Brackets
+5) Eclipse
+6) KATE
+7) Gedit
+8) Geany
+9) Bluefish Editor
 
-11)Back to main menu
+11) Back to main menu
 0) Install all the editors
 """)
         zx = int(input("Enter the number of the tool : >>> "))
@@ -1228,9 +1228,9 @@ note : the tools will be downloaded in the file of script
       def android() :
         cmd = os.system("clear")
         print("""
-1)kwetza
+1) kwetza
 
-00)Back to main menu 
+00) Back to main menu 
 """)
         k = int(input("Enter the number of the tool : >>> "))
         if k == 1 :
@@ -1245,10 +1245,10 @@ note : the tools will be downloaded in the file of script
       def enviro():
         cmd = os.system("clear")
         print("""
-1)Mate
-2)KDE
-3)LXDE
-4)XFCE
+1) Mate
+2) KDE
+3) LXDE
+4) XFCE
 
 00)Back to main menu 
 """)
@@ -1290,14 +1290,14 @@ note : the tools will be downloaded in the file of script
         post()
     elif a == 20 :
         cmd = os.system("clear")
-        print("\nBye Have a nice time")
+        print("\nBye. Have a nice time")
         quit()
     elif a == 21 :
         cmd = os.system("clear")
         print("""
 Hi.
-My Name is Ahmed Maher(Hacker-EG) from egypt
-the mother of the world
+My name is Ahmed Maher (Hacker-EG) from Egypt,
+the mother of the world,
 you find on Facebook
 
 https://www.facebook.com/ahmedmaher1233
